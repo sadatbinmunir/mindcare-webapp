@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MindCare - Journal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">💚 MindCare</div>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="mood.html">Mood</a>
+      <a href="chat.html">Chat</a>
+      <a href="specialists.html">Specialists</a>
+      <a href="journal.html" class="active">Journal</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Personal Journal</h1>
+    <p>Write your thoughts and reflect on your day.</p>
+  </section>
+
+  <section class="chat-container">
+
+    <textarea 
+      id="journalText" 
+      class="journal-box"
+      placeholder="How are you feeling today? Write your thoughts here..."
+      oninput="updateCharCount()"
+    ></textarea>
+
+    <p id="charCount" class="center-text">0 characters</p>
+
+    <button onclick="saveJournal()">Save Entry</button>
+
+    <p id="journalResult" class="center-text"></p>
+
+  </section>
+  <div class="emergency-button" onclick="showEmergencyHelp()">
+  Emergency Help
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

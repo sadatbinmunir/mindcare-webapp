@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MindCare - Appointment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">💚 MindCare</div>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="specialists.html" class="active">Specialists</a>
+    </div>
+  </nav>
+
+  <section class="login-page">
+    <div class="login-box">
+      <h1>Request Appointment</h1>
+      <p>Fill in your details</p>
+
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="date" id="date">
+      <input type="text" id="message" placeholder="Short message">
+
+      <button onclick="submitAppointment()">Submit</button>
+    </div>
+  </section>
+
+  <div class="emergency-button" onclick="showEmergencyHelp()">
+  Emergency Help
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

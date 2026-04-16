@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MindCare - Mood Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">💚 MindCare</div>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="mood.html" class="active">Mood</a>
+      <a href="chat.html">Chat</a>
+      <a href="specialists.html">Specialists</a>
+      <a href="journal.html">Journal</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Mood Tracker</h1>
+    <p>Select how you feel today and receive a supportive message.</p>
+  </section>
+
+  <section class="mood-section">
+    <div class="mood-buttons">
+      <button onclick="saveMood('Happy')">Happy</button>
+      <button onclick="saveMood('Sad')">Sad</button>
+      <button onclick="saveMood('Anxious')">Anxious</button>
+      <button onclick="saveMood('Stressed')">Stressed</button>
+    </div>
+
+    <div class="mood-result-box">
+      <p id="moodResult" class="center-text"></p>
+      <p id="moodMessage" class="mood-message"></p>
+    </div>
+  </section>
+  <div class="emergency-button" onclick="showEmergencyHelp()">
+  Emergency Help
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

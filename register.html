@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MindCare - Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="login-page">
+    <div class="login-box">
+      <div class="login-logo">💚 MindCare</div>
+      <h1>Create Account</h1>
+      <p>Join MindCare and begin your wellness journey</p>
+
+      <input type="text" id="regName" placeholder="Full Name">
+      <input type="email" id="regEmail" placeholder="Email Address">
+      <input type="password" id="regPassword" placeholder="Create Password">
+
+      <select id="regRole" class="role-select">
+        <option value="">Select Role</option>
+        <option value="User">User</option>
+        <option value="Specialist">Specialist</option>
+        <option value="Admin">Admin</option>
+      </select>
+
+      <button onclick="registerUser()">Register</button>
+
+      <p class="small-text">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+  </section>
+
+  <div class="emergency-button" onclick="showEmergencyHelp()">
+    Emergency Help
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

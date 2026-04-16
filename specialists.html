@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MindCare - Specialists</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">💚 MindCare</div>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="mood.html">Mood</a>
+      <a href="chat.html">Chat</a>
+      <a href="specialists.html" class="active">Specialists</a>
+      <a href="journal.html">Journal</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Mental Health Specialists</h1>
+    <p>Connect with professionals who can help you</p>
+  </section>
+
+  <section class="cards-section">
+
+    <div class="feature-card">
+      <h2>Dr. Sarah Mitchell</h2>
+      <p>Clinical Psychologist • 8+ years experience</p>
+      <button onclick="goAppointment()">Request Appointment</button>
+    </div>
+
+    <div class="feature-card">
+      <h2>Dr. James Chen</h2>
+      <p>Psychiatrist • 10+ years experience</p>
+      <button onclick="goAppointment()">Request Appointment</button>
+    </div>
+
+  </section>
+  <div class="emergency-button" onclick="showEmergencyHelp()">
+  Emergency Help
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

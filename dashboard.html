@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MindCare - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">💚 MindCare</div>
+    <div class="nav-links">
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="mood.html">Mood</a>
+      <a href="chat.html">Chat</a>
+      <a href="specialists.html">Specialists</a>
+      <a href="journal.html">Journal</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section class="hero">
+    <h1>Welcome to MindCare</h1>
+    <p>Choose a feature to continue your wellness journey</p>
+  </section>
+
+  <!-- FEATURE CARDS -->
+  <section class="cards-section">
+
+    <div class="feature-card" onclick="window.location.href='mood.html'">
+      <h2>Mood Tracker</h2>
+      <p>Track how you feel today</p>
+    </div>
+
+    <div class="feature-card" onclick="window.location.href='chat.html'">
+      <h2>Chat Companion</h2>
+      <p>Talk to a supportive chatbot</p>
+    </div>
+
+    <div class="feature-card" onclick="window.location.href='specialists.html'">
+      <h2>Specialists</h2>
+      <p>Connect with professionals</p>
+    </div>
+
+    <div class="feature-card" onclick="window.location.href='journal.html'">
+      <h2>Journal</h2>
+      <p>Write your thoughts privately</p>
+    </div>
+
+  </section>
+  <div class="emergency-button" onclick="showEmergencyHelp()">
+  Emergency Help
+</div>
+
+</body>
+</html>
